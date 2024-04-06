@@ -18,24 +18,24 @@ public class EquilateralTriangle
     public double GetSide1() =>
         _sideLength;
 
-    public double GetSide2() =>
+    public virtual double GetSide2() =>
         _sideLength;
 
-    public double GetSide3() =>
+    public virtual double GetSide3() =>
         _sideLength;
 
-    public double GetPerimeter() =>
+    public virtual double GetPerimeter() =>
         TriangleSides * _sideLength;
 
-    public double GetAngle1() =>
+    public virtual double GetAngle1() =>
         GetAngle();
 
-    public double GetAngle2() =>
+    public virtual double GetAngle2() =>
         GetAngle();
 
-    public double GetAngle3() =>
+    public virtual double GetAngle3() =>
         GetAngle();
 
-    public double GetAngle() =>
+    public virtual double GetAngle() =>
         TriangleAnglesTotal / TriangleSides;
 }

@@ -7,7 +7,8 @@ internal static class Program
 {
     private static void Main()
     {
-        Triangle triangle = new(4.0, 60.0, 45.0);
+        TriangleFactory factory = new();
+        Triangle triangle = factory.CreateTriangle(3, 60, 60);
         ShowMenu(triangle);
     }
 
